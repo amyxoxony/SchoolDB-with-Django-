@@ -1,0 +1,31 @@
+{% extends 'school/base.html' %}
+
+{% block content %}
+
+<div class = "container">
+  <center>
+    <table style="width:100%">
+    
+    <tr>
+        <th>Subject</th>
+        <th>Name</th>
+        <th>Score</th>
+    </tr>
+
+    {% for sc in score %}
+
+    <tr>
+        <td>{{sc.student_subject}}</td>
+        <td>{{sc.student_name}}</td>
+        <td>{{sc.score}}</td>
+
+    </tr>
+    {% endfor %}
+
+    </table>
+  </center>
+
+
+</div>
+
+{% endblock content %}
